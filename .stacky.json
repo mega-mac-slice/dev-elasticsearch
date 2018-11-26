@@ -1,0 +1,9 @@
+{
+  "name": "docker-elasticsearch-5.1.2",
+  "commands": {
+    "status": "make status",
+    "start": "make check-running",
+    "stop": "make stop"
+  },
+  "stack": []
+}

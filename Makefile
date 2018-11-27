@@ -26,4 +26,4 @@ check-running:
     fi \
 
 status:
-	curl docker:${PORT1}
+	@curl -f -s docker:${PORT1} > /dev/null && echo ok || echo error

@@ -1,4 +1,4 @@
-# docker-elasticsearch-5.1.2
+# dev-elasticsearch-5.1.2
 
 Manages docker image for local development.
 

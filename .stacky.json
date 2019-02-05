@@ -1,5 +1,5 @@
 {
-  "name": "dev-elasticsearch-5.1.2",
+  "name": "dev-elasticsearch",
   "commands": {
     "status": "make status",
     "start": "make check-running",

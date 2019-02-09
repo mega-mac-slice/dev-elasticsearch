@@ -23,7 +23,7 @@ remove:
 check-running:
 	@if [ -z "${CONTAINER_ID}" ]; then\
 		make start;\
-    fi \
+	fi \
 
 status:
-	@curl -f -s docker:${PORT1} > /dev/null && echo ok || echo fail
+	@curl -f -s 0.0.0.0:${PORT1} > /dev/null && echo ok || echo fail

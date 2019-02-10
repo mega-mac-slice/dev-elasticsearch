@@ -3,7 +3,7 @@ services:
   - docker:dind
 test:
   script:
-    - apk add --update make
+    - apk add --update make curl
     - make start
     - make status
     - make stop

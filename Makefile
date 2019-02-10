@@ -10,7 +10,9 @@ start:
 	docker run -itd \
 	-e "xpack.security.enabled=false" \
 	-e "ES_JAVA_OPTS=-Xms1g -Xmx1g" \
-	-p ${PORT1}:${PORT1} -p ${PORT2}:${PORT2} ${IMAGE}
+	-p ${PORT1}:${PORT1} \
+	-p ${PORT2}:${PORT2} \
+	${IMAGE}
 
 stop:
 	docker stop ${CONTAINER_ID}

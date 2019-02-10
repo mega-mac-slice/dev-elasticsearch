@@ -1,6 +1,7 @@
 image: docker:stable
 test:
   script:
+    - docker-machine start
     - apk add --update make
     - make start
     - make status

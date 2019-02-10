@@ -1,0 +1,7 @@
+image: docker:18.09.01
+test:
+  script:
+    - apt-get update -qy
+    - make start
+    - make status
+    - make stop

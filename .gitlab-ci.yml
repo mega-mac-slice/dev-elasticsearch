@@ -1,0 +1,7 @@
+image: docker:stable
+test:
+  script:
+    - apt-get update -qy
+    - make start
+    - make status
+    - make stop
